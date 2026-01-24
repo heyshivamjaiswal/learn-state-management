@@ -2,15 +2,6 @@
 
 This project is a small Cart app built using **React + Zustand**.
 
-The goal of this README is to explain **EVERYTHING** in very simple language:
-- What is Zustand?
-- What is `create`?
-- What is `set`?
-- How data goes from ProductList → Store → Cart
-- How components use data they never created
-- How functions are passed and called in React
-- Why sometimes we write `onClick={fn}` and sometimes `onClick={() => fn(id)}`
-
 ---
 
 # 🧠 First: What problem are we solving?
