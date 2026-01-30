@@ -8,7 +8,7 @@ function Cart() {
   return (
     <div>
       <h2>Cart</h2>
-
+                                            
       {cart.map((product) => (
         <div key={product.id}>
           <span>{product.name}</span>
