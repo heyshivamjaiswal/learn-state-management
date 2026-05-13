@@ -269,9 +269,91 @@ Both are using the same global cupboard
 
 
 
+---
+🟢 Pattern 1 — Replace value
 
+Used for:
 
+strings
+booleans
+selected tabs
+loading state
 
+Template:
+```
+setSomething: (value) =>
+  set({
+    something: value,
+  })
+
+Mental model:
+
+just replace it
+
+```
+🟡 Pattern 2 — Update object field
+
+Used for:
+
+forms
+settings
+nested data
+
+Template:
+```
+
+setSomething: (key, value) =>
+  set((state) => ({
+    something: {
+      ...state.something,
+      [key]: value,
+    },
+  }))
+
+Mental model:
+
+copy old object
+update one property
+
+This is your formValues pattern.
+```
+🔵 Pattern 3 — Add to array
+
+Used for:
+
+chat messages
+todos
+notifications
+
+Template:
+```
+addItem: (item) =>
+  set((state) => ({
+    items: [...state.items, item],
+  }))
+
+Mental model:
+
+copy old array
+append new item
+```
+🔴 Pattern 4 — Remove from array
+
+Template:
+```
+
+removeItem: (id) =>
+  set((state) => ({
+    items: state.items.filter(
+      (item) => item.id !== id
+    ),
+  }))
+
+Mental model:
+
+keep everything except removed item
+
+```
 
 
 
