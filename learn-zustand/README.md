@@ -274,10 +274,10 @@ Both are using the same global cupboard
 
 Used for:
 
-strings
-booleans
-selected tabs
-loading state
+-strings
+-booleans
+-selected tabs
+-loading state
 
 Template:
 ```
@@ -295,9 +295,9 @@ just replace it
 
 Used for:
 
-forms
-settings
-nested data
+-forms
+-settings
+-nested data
 
 Template:
 ```
@@ -321,9 +321,9 @@ This is your formValues pattern.
 
 Used for:
 
-chat messages
-todos
-notifications
+-chat messages
+-todos
+-notifications
 
 Template:
 ```
